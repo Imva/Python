@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 alphabets = [chr(i) for i in range(32, 126)]
 gear_one = [i for i in range(len(alphabets))]
 gear_two = [i for i in range(len(alphabets))]
@@ -42,9 +40,8 @@ def engine(input_character):
     rotator()
 
 
-if __name__ == '__main__':
-    decode = input("Type your message:\n")
-    decode = list(decode)
+if __name__ == "__main__":
+    decode = list(input("Type your message:\n"))
     while True:
         try:
             token = int(input("Please set token:(must be only digits)\n"))
@@ -53,9 +50,10 @@ if __name__ == '__main__':
             print(error)
     for i in range(token):
         rotator()
-    for i in decode:
-        engine(i)
+    for j in decode:
+        engine(j)
     print("\n" + "".join(code))
     print(
         f"\nYour Token is {token} please write it down.\nIf you want to decode "
-        f"this message again you should input same digits as token!")
+        f"this message again you should input same digits as token!"
+    )

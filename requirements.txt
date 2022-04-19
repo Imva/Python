@@ -1,6 +1,19 @@
-black
-flake8
+beautifulsoup4
+fake_useragent
+keras
+lxml
 matplotlib
-mypy
 numpy
-pytest
+opencv-python
+pandas
+pillow
+qiskit
+requests
+# scikit-fuzzy  # Causing broken builds
+sklearn
+statsmodels
+sympy
+tensorflow
+texttable
+tweepy
+xgboost
